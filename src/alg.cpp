@@ -1,5 +1,4 @@
 // Copyright 2024 NNTU-CS
-
 #include <iostream>
 #include <iomanip>
 
@@ -19,13 +18,13 @@ int cbinsearch(int* arr, int size, int value) {
             p = middle + 1;
             while (p < size  && arr[p] == value) {
                 count++;
-                p--;
+                p++;
             }
             return count;
     } else if (arr[middle] > value) {
         rght = middle - 1;
-    } else { 
-        lft = middle +1 ; 
+    } else {
+        lft = middle +1;
     }
     }
     return count;
